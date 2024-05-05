@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-fundo-page: #f1eced;
+  --color-titulos:#c04253;
+  --color-subtitulos: #e61c37;
+  --color-descricao: #700c11;
+  --color-link: #e61c37;
+  --color-botoes: #e6243eda;
+}
 * {
   padding: 0;
   margin: 0;
@@ -6,12 +15,16 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #f1eced;
+  background-color: var(--color-fundo-page);
 }
 /* ESTILIZAÇÃO DA NAV BAR */
 header {
   width: 100%;
   padding: 28px 8%;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-fundo-page);
+  z-index: 3;
 }
 #navbar {
   width: 100%;
@@ -33,7 +46,7 @@ header {
   font-weight: 600;
 }
 .nav-item.active a {
-  color: #e61c37;
+  color: var(--color-link);
   border-bottom: 3px solid #700c11;
 }
 
@@ -50,7 +63,7 @@ header {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background-color: #e6243eda;
+  background-color: var(--color-botoes);
   padding: 10px 14px;
   font-weight: 600;
   box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.1);
@@ -71,7 +84,7 @@ header {
   #mobile_btn {
     display: block;
     border: none;
-    color: #e6243eda;
+    color: var(--color-botoes);
     background-color: transparent;
     font-size: 1.5rem;
     cursor: pointer;
@@ -116,14 +129,14 @@ section {
   margin-top: 4%;
 }
 #cta .title {
-  color: #c04253;
+  color: var(--color-titulos);
   font-size: 2.7rem;
 }
 #cta .title span {
-  color: #e61c37;
+  color: var(--color-subtitulos);
 }
 #cta .description {
-  color: #700c11;
+  color: var(--color-descricao);
   font-weight: 400;
   font-size: 1.1rem;
 }
@@ -152,7 +165,7 @@ section {
   justify-content: center;
   width: 45px;
   height: 40px;
-  background-color: #e63149;
+  background-color: var(--color-botoes);
   font-size: 1.4rem;
   border-radius: 10px;
   text-decoration: none;
@@ -162,7 +175,7 @@ section {
 }
 
 .social-media-buttons a:hover {
-  box-shadow: 0px 0px 12px 8px rgba(226, 58, 128, 0.699);
+  box-shadow: 0px 0px 12px 8px #e63149;
 }
 #banner {
   display: flex;
@@ -211,11 +224,11 @@ section {
   min-height: 100vh;
 }
 .section-title {
-  color: #c04253;
+  color: var(--color-titulos);
   font-size: 1.9963rem;
 }
 .section-subtitle {
-  color: #e61c37;
+  color: var(--color-subtitulos);
   font-size: 2.063rem;
 }
 #menu {
@@ -233,9 +246,9 @@ section {
   gap: 24px;
   margin-top: 32px;
 }
-.link-price a{  
-  text-decoration: none;
-}
+.fa-basket-shopping{
+  color: #f1eced; 
+}  
 
 .dish {
   display: flex;
@@ -245,7 +258,7 @@ section {
   gap: 18px;
   width: 40%;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: var(--color-fundo-page);
   box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
@@ -257,7 +270,7 @@ section {
 
 .dish-heart {
   position: absolute;
-  background-color: #a5a4a370;
+  background-color: #d6d3d4  ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -270,11 +283,11 @@ section {
   border-radius: 0px 37.5px 0px 42.5px;
 }
 .dish-title {
-color: #c04253;
+color: var(--color-titulos);
 }
 .dish-description {
   font-weight: 500;
-  color: #700c11;
+  color: var(--color-descricao);
   text-align: center;
 }
 
