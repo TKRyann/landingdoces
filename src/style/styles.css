@@ -9,6 +9,7 @@
   --color-botoes: #e6243eda;
 }
 * {
+  text-decoration: none;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -73,6 +74,7 @@ header {
 .btn-default:hover {
   background-color: #e6243e;
 }
+
 /* REPOSIVIDADE DA NAVBAR */
 
 @media screen and (max-width: 1170px) {
@@ -137,7 +139,7 @@ section {
 }
 #cta .description {
   color: var(--color-descricao);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.1rem;
 }
 #cta_buttons {
@@ -231,13 +233,6 @@ section {
   color: var(--color-subtitulos);
   font-size: 2.063rem;
 }
-#menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
 
 #dishes {
   width: 100%;
@@ -319,5 +314,89 @@ color: var(--color-titulos);
 
   #menu .section-subtitle {
     text-align: center;
+  }
+} 
+
+/* ESTILIZAÇÃO SOBRE MIM */
+
+#sobre_mim {
+  display: flex;
+  min-height: calc(100vh - 151px);
+  position: relative;
+  
+}
+#sobre{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 5%;
+}
+#sobre .title {
+  font-size: 2.5rem;
+  color: var(--color-titulos);
+}
+
+.description{
+  font-weight: 500;
+  color: var(--color-descricao);
+  text-align: center;
+}
+#banner_dona {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  width: 50%;
+  z-index: 2;
+}
+
+#banner_dona img {
+  border-radius: 20px;
+  height: 90%;
+  width: fit-content;
+}
+
+/* REPOSIVIDADE DA SOBRE MIM */
+
+@media screen and (max-width: 1170px) {
+  #home {
+    min-height: 100%;
+    padding-top: 0px;
+  }
+
+  #banner_dona,
+  #banner_dona img {
+    display: none;
+  }
+
+  #sobre {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* REPOSIVIDADE DA FOOTER */
+
+footer {
+  background-color: var(--color-primary-2);
+}
+
+#footer_items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 9% 30px 9%;
+  align-items: center;
+}
+
+#copyright {
+  color: #000000;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  #footer_items {
+      flex-direction: column;
+      gap: 20px;
   }
 }
