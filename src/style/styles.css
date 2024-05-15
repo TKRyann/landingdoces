@@ -15,6 +15,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--color-fundo-page);
 }
@@ -138,6 +141,7 @@ section {
   color: var(--color-subtitulos);
 }
 #cta .description {
+  text-align: justify;
   color: var(--color-descricao);
   font-weight: 500;
   font-size: 1.1rem;
@@ -281,6 +285,7 @@ section {
 color: var(--color-titulos);
 }
 .dish-description {
+  text-align: justify;
   font-weight: 500;
   color: var(--color-descricao);
   text-align: center;
@@ -342,6 +347,7 @@ color: var(--color-titulos);
   color: var(--color-descricao);
   text-align: center;
 }
+
 #banner_dona {
   display: flex;
   align-items: start;
@@ -352,7 +358,7 @@ color: var(--color-titulos);
 
 #banner_dona img {
   border-radius: 20px;
-  height: 90%;
+  height: 80%;
   width: fit-content;
 }
 
@@ -379,7 +385,8 @@ color: var(--color-titulos);
 /* REPOSIVIDADE DA FOOTER */
 
 footer {
-  background-color: var(--color-primary-2);
+  background-color: var(--color-fundo-page);
+  margin-top: 16px;
 }
 
 #footer_items {
